@@ -11,7 +11,41 @@
 		D3ADCEAF2624C046007F31BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEAE2624C046007F31BA /* ContentView.swift */; };
 		D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEB02624C046007F31BA /* Assets.xcassets */; };
 		D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEB32624C046007F31BA /* Preview Assets.xcassets */; };
+		D3ADCEC32624C13A007F31BA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADCEC22624C13A007F31BA /* WidgetKit.framework */; };
+		D3ADCEC52624C13A007F31BA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADCEC42624C13A007F31BA /* SwiftUI.framework */; };
+		D3ADCEC82624C13A007F31BA /* OmerCounterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEC72624C13A007F31BA /* OmerCounterWidget.swift */; };
+		D3ADCECB2624C13B007F31BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCECA2624C13B007F31BA /* Assets.xcassets */; };
+		D3ADCECD2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */; };
+		D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */; };
+		D3ADCED12624C13B007F31BA /* OmerCounterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3ADCEC02624C13A007F31BA /* OmerCounterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEE92624CF7B007F31BA /* titles.strings */; };
+		D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */; };
+		D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3ADCECF2624C13B007F31BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3ADCEA12624C046007F31BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3ADCEBF2624C13A007F31BA;
+			remoteInfo = OmerCounterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3ADCED52624C13B007F31BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3ADCED12624C13B007F31BA /* OmerCounterWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D3ADCEA92624C046007F31BA /* Omer Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omer Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +54,17 @@
 		D3ADCEB02624C046007F31BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3ADCEB32624C046007F31BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3ADCEB52624C046007F31BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ADCEC02624C13A007F31BA /* OmerCounterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OmerCounterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ADCEC22624C13A007F31BA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D3ADCEC42624C13A007F31BA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D3ADCEC72624C13A007F31BA /* OmerCounterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerCounterWidget.swift; sourceTree = "<group>"; };
+		D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OmerCounterWidget.intentdefinition; sourceTree = "<group>"; };
+		D3ADCECA2624C13B007F31BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3ADCECC2624C13B007F31BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ADCEE82624CF7B007F31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/titles.strings; sourceTree = "<group>"; };
+		D3ADCEEC2624CF95007F31BA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/titles.strings; sourceTree = "<group>"; };
+		D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextView.swift; sourceTree = "<group>"; };
+		D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +75,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3ADCEBD2624C13A007F31BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ADCEC52624C13A007F31BA /* SwiftUI.framework in Frameworks */,
+				D3ADCEC32624C13A007F31BA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D3ADCEA02624C046007F31BA = {
 			isa = PBXGroup;
 			children = (
+				D3ADCEE92624CF7B007F31BA /* titles.strings */,
 				D3ADCEAB2624C046007F31BA /* Omer Counter */,
+				D3ADCEC62624C13A007F31BA /* OmerCounterWidget */,
+				D3ADCEC12624C13A007F31BA /* Frameworks */,
 				D3ADCEAA2624C046007F31BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D3ADCEA92624C046007F31BA /* Omer Counter.app */,
+				D3ADCEC02624C13A007F31BA /* OmerCounterWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +115,8 @@
 				D3ADCEB02624C046007F31BA /* Assets.xcassets */,
 				D3ADCEB52624C046007F31BA /* Info.plist */,
 				D3ADCEB22624C046007F31BA /* Preview Content */,
+				D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */,
+				D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */,
 			);
 			path = "Omer Counter";
 			sourceTree = "<group>";
@@ -69,6 +129,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D3ADCEC12624C13A007F31BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCEC22624C13A007F31BA /* WidgetKit.framework */,
+				D3ADCEC42624C13A007F31BA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3ADCEC62624C13A007F31BA /* OmerCounterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCEC72624C13A007F31BA /* OmerCounterWidget.swift */,
+				D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */,
+				D3ADCECA2624C13B007F31BA /* Assets.xcassets */,
+				D3ADCECC2624C13B007F31BA /* Info.plist */,
+			);
+			path = OmerCounterWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +159,34 @@
 				D3ADCEA52624C046007F31BA /* Sources */,
 				D3ADCEA62624C046007F31BA /* Frameworks */,
 				D3ADCEA72624C046007F31BA /* Resources */,
+				D3ADCED52624C13B007F31BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D3ADCED02624C13B007F31BA /* PBXTargetDependency */,
 			);
 			name = "Omer Counter";
 			productName = "Omer Counter";
 			productReference = D3ADCEA92624C046007F31BA /* Omer Counter.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D3ADCEBF2624C13A007F31BA /* OmerCounterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ADCED22624C13B007F31BA /* Build configuration list for PBXNativeTarget "OmerCounterWidgetExtension" */;
+			buildPhases = (
+				D3ADCEBC2624C13A007F31BA /* Sources */,
+				D3ADCEBD2624C13A007F31BA /* Frameworks */,
+				D3ADCEBE2624C13A007F31BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmerCounterWidgetExtension;
+			productName = OmerCounterWidgetExtension;
+			productReference = D3ADCEC02624C13A007F31BA /* OmerCounterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +200,9 @@
 					D3ADCEA82624C046007F31BA = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					D3ADCEBF2624C13A007F31BA = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = D3ADCEA42624C046007F31BA /* Build configuration list for PBXProject "Omer Counter" */;
@@ -110,6 +212,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = D3ADCEA02624C046007F31BA;
 			productRefGroup = D3ADCEAA2624C046007F31BA /* Products */;
@@ -117,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				D3ADCEA82624C046007F31BA /* Omer Counter */,
+				D3ADCEBF2624C13A007F31BA /* OmerCounterWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +230,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */,
 				D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */,
 				D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADCEBE2624C13A007F31BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ADCECB2624C13B007F31BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +251,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */,
 				D3ADCEAF2624C046007F31BA /* ContentView.swift in Sources */,
 				D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */,
+				D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */,
+				D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADCEBC2624C13A007F31BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ADCECD2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
+				D3ADCEC82624C13A007F31BA /* OmerCounterWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3ADCED02624C13B007F31BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3ADCEBF2624C13A007F31BA /* OmerCounterWidgetExtension */;
+			targetProxy = D3ADCECF2624C13B007F31BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3ADCEE92624CF7B007F31BA /* titles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ADCEE82624CF7B007F31BA /* en */,
+				D3ADCEEC2624CF95007F31BA /* he */,
+			);
+			name = titles.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D3ADCEB62624C046007F31BA /* Debug */ = {
@@ -265,6 +410,7 @@
 		D3ADCEB92624C046007F31BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +432,7 @@
 		D3ADCEBA2624C046007F31BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +446,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.orelzion.Omer-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3ADCED32624C13B007F31BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmerCounterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.orelzion.Omer-Counter.OmerCounterWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3ADCED42624C13B007F31BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmerCounterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.orelzion.Omer-Counter.OmerCounterWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +508,15 @@
 			buildConfigurations = (
 				D3ADCEB92624C046007F31BA /* Debug */,
 				D3ADCEBA2624C046007F31BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ADCED22624C13B007F31BA /* Build configuration list for PBXNativeTarget "OmerCounterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ADCED32624C13B007F31BA /* Debug */,
+				D3ADCED42624C13B007F31BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
