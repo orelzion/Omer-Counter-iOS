@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,11 @@
 		D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEE92624CF7B007F31BA /* titles.strings */; };
 		D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */; };
 		D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */; };
+		D3ADCEF926262494007F31BA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEF826262494007F31BA /* LocationManager.swift */; };
+		D3ADCF092626262A007F31BA /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF082626262A007F31BA /* MainContentView.swift */; };
+		D3ADCF0E26262A0F007F31BA /* Solar in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADCF0D26262A0F007F31BA /* Solar */; };
+		D3ADCF1226262A33007F31BA /* TimesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1126262A33007F31BA /* TimesManager.swift */; };
+		D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1526273374007F31BA /* OmerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,10 @@
 		D3ADCEEC2624CF95007F31BA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/titles.strings; sourceTree = "<group>"; };
 		D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextView.swift; sourceTree = "<group>"; };
 		D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextLine.swift; sourceTree = "<group>"; };
+		D3ADCEF826262494007F31BA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D3ADCF082626262A007F31BA /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		D3ADCF1126262A33007F31BA /* TimesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesManager.swift; sourceTree = "<group>"; };
+		D3ADCF1526273374007F31BA /* OmerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADCF0E26262A0F007F31BA /* Solar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,13 +120,14 @@
 		D3ADCEAB2624C046007F31BA /* Omer Counter */ = {
 			isa = PBXGroup;
 			children = (
+				D3ADCEFF262625F8007F31BA /* Model */,
+				D3ADCEFE262625EE007F31BA /* Views */,
+				D3ADCEF726262483007F31BA /* Managers */,
 				D3ADCEAC2624C046007F31BA /* Omer_CounterApp.swift */,
 				D3ADCEAE2624C046007F31BA /* ContentView.swift */,
 				D3ADCEB02624C046007F31BA /* Assets.xcassets */,
 				D3ADCEB52624C046007F31BA /* Info.plist */,
 				D3ADCEB22624C046007F31BA /* Preview Content */,
-				D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */,
-				D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */,
 			);
 			path = "Omer Counter";
 			sourceTree = "<group>";
@@ -149,6 +160,33 @@
 			path = OmerCounterWidget;
 			sourceTree = "<group>";
 		};
+		D3ADCEF726262483007F31BA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCEF826262494007F31BA /* LocationManager.swift */,
+				D3ADCF1126262A33007F31BA /* TimesManager.swift */,
+				D3ADCF1526273374007F31BA /* OmerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D3ADCEFE262625EE007F31BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */,
+				D3ADCF082626262A007F31BA /* MainContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3ADCEFF262625F8007F31BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +205,9 @@
 				D3ADCED02624C13B007F31BA /* PBXTargetDependency */,
 			);
 			name = "Omer Counter";
+			packageProductDependencies = (
+				D3ADCF0D26262A0F007F31BA /* Solar */,
+			);
 			productName = "Omer Counter";
 			productReference = D3ADCEA92624C046007F31BA /* Omer Counter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +256,9 @@
 				he,
 			);
 			mainGroup = D3ADCEA02624C046007F31BA;
+			packageReferences = (
+				D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */,
+			);
 			productRefGroup = D3ADCEAA2624C046007F31BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,9 +297,13 @@
 			files = (
 				D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */,
 				D3ADCEAF2624C046007F31BA /* ContentView.swift in Sources */,
+				D3ADCF1226262A33007F31BA /* TimesManager.swift in Sources */,
+				D3ADCEF926262494007F31BA /* LocationManager.swift in Sources */,
+				D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */,
 				D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */,
 				D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */,
 				D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
+				D3ADCF092626262A007F31BA /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +570,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ceeK/Solar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3ADCF0D26262A0F007F31BA /* Solar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */;
+			productName = Solar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3ADCEA12624C046007F31BA /* Project object */;
 }
