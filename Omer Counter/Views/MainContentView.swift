@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct MainContentView: View {
-    let textLines:Array<OmerTextLine> = []
+    
+    let textLines:Array<OmerTextLine> = [
+        OmerTextLine(text: omerText)
+    ]
     
     init() {
         UITableView.appearance().separatorStyle = .none

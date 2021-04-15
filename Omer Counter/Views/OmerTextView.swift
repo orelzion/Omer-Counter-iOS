@@ -15,7 +15,7 @@ struct OmerTextView: View {
         VStack(alignment: .leading) {
             ScrollView {
                 ForEach(textLines, id: \.id) { textLine in
-                    Text(textLine.text)
+                    AttributedText(textLine.text)
                         .listRowBackground(Color.clear)
                         .padding()
                 }
@@ -26,6 +26,6 @@ struct OmerTextView: View {
 
 struct OmerTextView_Previews: PreviewProvider {
     static var previews: some View {
-        OmerTextView(textLines: [OmerTextLine(text: "sadasd")])
+        OmerTextView(textLines: [OmerTextLine(text: omerText)])
     }
 }

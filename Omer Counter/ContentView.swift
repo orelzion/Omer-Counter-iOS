@@ -18,9 +18,6 @@ struct ContentView: View {
         
         return ZStack {
             MainContentView()
-            if(omerDay != nil) {
-                Text("\(omerDay!)")
-            }
         }
     }
 }

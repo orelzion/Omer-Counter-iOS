@@ -26,6 +26,10 @@
 		D3ADCF0E26262A0F007F31BA /* Solar in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADCF0D26262A0F007F31BA /* Solar */; };
 		D3ADCF1226262A33007F31BA /* TimesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1126262A33007F31BA /* TimesManager.swift */; };
 		D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1526273374007F31BA /* OmerManager.swift */; };
+		D3ADCF242628A1F8007F31BA /* OmerTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF232628A1F8007F31BA /* OmerTexts.swift */; };
+		D3ADCF3D2628BA13007F31BA /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF3C2628BA13007F31BA /* AttributedText.swift */; };
+		D3ADCF4B2628C85D007F31BA /* BlackLabsSwiftUIColor in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */; };
+		D3ADCF522628C8E7007F31BA /* UiExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF512628C8E7007F31BA /* UiExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,9 @@
 		D3ADCF082626262A007F31BA /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		D3ADCF1126262A33007F31BA /* TimesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesManager.swift; sourceTree = "<group>"; };
 		D3ADCF1526273374007F31BA /* OmerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerManager.swift; sourceTree = "<group>"; };
+		D3ADCF232628A1F8007F31BA /* OmerTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTexts.swift; sourceTree = "<group>"; };
+		D3ADCF3C2628BA13007F31BA /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
+		D3ADCF512628C8E7007F31BA /* UiExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADCF4B2628C85D007F31BA /* BlackLabsSwiftUIColor in Frameworks */,
 				D3ADCF0E26262A0F007F31BA /* Solar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +128,7 @@
 		D3ADCEAB2624C046007F31BA /* Omer Counter */ = {
 			isa = PBXGroup;
 			children = (
+				D3ADCF502628C8DB007F31BA /* Util */,
 				D3ADCEFF262625F8007F31BA /* Model */,
 				D3ADCEFE262625EE007F31BA /* Views */,
 				D3ADCEF726262483007F31BA /* Managers */,
@@ -175,6 +184,7 @@
 			children = (
 				D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */,
 				D3ADCF082626262A007F31BA /* MainContentView.swift */,
+				D3ADCF3C2628BA13007F31BA /* AttributedText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,8 +193,17 @@
 			isa = PBXGroup;
 			children = (
 				D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */,
+				D3ADCF232628A1F8007F31BA /* OmerTexts.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D3ADCF502628C8DB007F31BA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCF512628C8E7007F31BA /* UiExt.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +226,7 @@
 			name = "Omer Counter";
 			packageProductDependencies = (
 				D3ADCF0D26262A0F007F31BA /* Solar */,
+				D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */,
 			);
 			productName = "Omer Counter";
 			productReference = D3ADCEA92624C046007F31BA /* Omer Counter.app */;
@@ -258,6 +278,7 @@
 			mainGroup = D3ADCEA02624C046007F31BA;
 			packageReferences = (
 				D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */,
+				D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */,
 			);
 			productRefGroup = D3ADCEAA2624C046007F31BA /* Products */;
 			projectDirPath = "";
@@ -295,12 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADCF3D2628BA13007F31BA /* AttributedText.swift in Sources */,
+				D3ADCF522628C8E7007F31BA /* UiExt.swift in Sources */,
 				D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */,
 				D3ADCEAF2624C046007F31BA /* ContentView.swift in Sources */,
 				D3ADCF1226262A33007F31BA /* TimesManager.swift in Sources */,
 				D3ADCEF926262494007F31BA /* LocationManager.swift in Sources */,
 				D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */,
 				D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */,
+				D3ADCF242628A1F8007F31BA /* OmerTexts.swift in Sources */,
 				D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */,
 				D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
 				D3ADCF092626262A007F31BA /* MainContentView.swift in Sources */,
@@ -580,6 +604,14 @@
 				minimumVersion = 2.2.0;
 			};
 		};
+		D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nbasham/BlackLabsSwiftUIColor/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -587,6 +619,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */;
 			productName = Solar;
+		};
+		D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */;
+			productName = BlackLabsSwiftUIColor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
