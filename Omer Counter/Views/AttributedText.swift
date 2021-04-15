@@ -69,6 +69,8 @@ private class HTML2TextParser: XMLParser, XMLParserDelegate {
             color = Color(UIColor(hexColor))
         } else if(elementName.uppercased() == "SMALL") {
             isSmall = true
+        } else if(elementName.uppercased() == "BIG") {
+            isBig = true
         }
     }
     
@@ -81,6 +83,8 @@ private class HTML2TextParser: XMLParser, XMLParserDelegate {
             color = nil
         } else if(elementName.uppercased() == "SMALL") {
             isSmall = false
+        } else if(elementName.uppercased() == "BIG") {
+            isBig = false
         }
     }
     

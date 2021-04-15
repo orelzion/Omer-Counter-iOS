@@ -39,6 +39,7 @@ class OmerManager: NSObject, ObservableObject {
         // Set date to 15 of Nissan
         components.month = 8
         components.day = 15
+        components.hour = 1
         
         return current.date(from: components)!
     }
