@@ -91,6 +91,6 @@ private class HTML2TextParser: XMLParser, XMLParserDelegate {
 
 struct AttributedText_Previews: PreviewProvider {
     static var previews: some View {
-        AttributedText(omerText)
+        AttributedText(beforeOmer)
     }
 }

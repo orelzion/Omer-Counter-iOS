@@ -10,7 +10,8 @@ import SwiftUI
 struct MainContentView: View {
     
     let textLines:Array<OmerTextLine> = [
-        OmerTextLine(text: omerText)
+        OmerTextLine(text: beforeOmer),
+        OmerTextLine(text: afterOmer)
     ]
     
     init() {

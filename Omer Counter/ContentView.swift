@@ -17,7 +17,7 @@ struct ContentView: View {
         let omerDay = omerManager.omerDay
         
         return ZStack {
-            MainContentView()
+            MainContentView().font(Font.custom("ShofarRegular", size: 18))
         }
     }
 }

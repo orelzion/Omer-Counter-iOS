@@ -30,6 +30,8 @@
 		D3ADCF3D2628BA13007F31BA /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF3C2628BA13007F31BA /* AttributedText.swift */; };
 		D3ADCF4B2628C85D007F31BA /* BlackLabsSwiftUIColor in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */; };
 		D3ADCF522628C8E7007F31BA /* UiExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF512628C8E7007F31BA /* UiExt.swift */; };
+		D3ADCF5A2628CCED007F31BA /* ShofarDemi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */; };
+		D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		D3ADCF232628A1F8007F31BA /* OmerTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTexts.swift; sourceTree = "<group>"; };
 		D3ADCF3C2628BA13007F31BA /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
 		D3ADCF512628C8E7007F31BA /* UiExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiExt.swift; sourceTree = "<group>"; };
+		D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShofarDemi-Bold.ttf"; sourceTree = "<group>"; };
+		D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShofarRegular.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		D3ADCEAB2624C046007F31BA /* Omer Counter */ = {
 			isa = PBXGroup;
 			children = (
+				D3ADCF572628CCBC007F31BA /* fonts */,
 				D3ADCF502628C8DB007F31BA /* Util */,
 				D3ADCEFF262625F8007F31BA /* Model */,
 				D3ADCEFE262625EE007F31BA /* Views */,
@@ -204,6 +209,15 @@
 				D3ADCF512628C8E7007F31BA /* UiExt.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		D3ADCF572628CCBC007F31BA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */,
+				D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +311,9 @@
 			files = (
 				D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */,
 				D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */,
+				D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */,
 				D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */,
+				D3ADCF5A2628CCED007F31BA /* ShofarDemi-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
