@@ -10,7 +10,7 @@ import MapKit
 
 struct ContentView: View {
     
-    @State private var omerManager = OmerManager()
+    @ObservedObject var omerManager = OmerManager()
     
     var body: some View {
         

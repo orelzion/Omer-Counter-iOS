@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainContentView: View {
     
-    @State var omerDay: Int?
+    let omerDay: Int?
     
     var body: some View {
         
