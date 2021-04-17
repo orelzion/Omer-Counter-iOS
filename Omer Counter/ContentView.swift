@@ -10,14 +10,9 @@ import MapKit
 
 struct ContentView: View {
     
-    @ObservedObject var omerManager = OmerManager()
-    
     var body: some View {
-        
-        let omerDay = omerManager.omerDay
-        
         return ZStack {
-            MainContentView(omerDay: omerDay).font(Font.custom("ShofarRegular", size: 18))
+            MainContentView().font(Font.custom("ShofarRegular", size: 18))
         }
     }
 }

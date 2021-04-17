@@ -18,7 +18,6 @@
 		D3ADCECD2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */; };
 		D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */; };
 		D3ADCED12624C13B007F31BA /* OmerCounterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3ADCEC02624C13A007F31BA /* OmerCounterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEE92624CF7B007F31BA /* titles.strings */; };
 		D3ADCEF02624D6A3007F31BA /* OmerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */; };
 		D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */; };
 		D3ADCEF926262494007F31BA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEF826262494007F31BA /* LocationManager.swift */; };
@@ -32,6 +31,10 @@
 		D3ADCF522628C8E7007F31BA /* UiExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF512628C8E7007F31BA /* UiExt.swift */; };
 		D3ADCF5A2628CCED007F31BA /* ShofarDemi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */; };
 		D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */; };
+		D3ADCF63262B6402007F31BA /* StrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF62262B6402007F31BA /* StrExt.swift */; };
+		D3ADCF70262B66BC007F31BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF73262B66BC007F31BA /* Localizable.strings */; };
+		D3ADCF71262B66BC007F31BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF73262B66BC007F31BA /* Localizable.strings */; };
+		D3ADCF7B262B67F9007F31BA /* OmerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF7A262B67F9007F31BA /* OmerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +75,6 @@
 		D3ADCEC92624C13A007F31BA /* OmerCounterWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OmerCounterWidget.intentdefinition; sourceTree = "<group>"; };
 		D3ADCECA2624C13B007F31BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3ADCECC2624C13B007F31BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3ADCEE82624CF7B007F31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/titles.strings; sourceTree = "<group>"; };
-		D3ADCEEC2624CF95007F31BA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/titles.strings; sourceTree = "<group>"; };
 		D3ADCEEF2624D6A3007F31BA /* OmerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextView.swift; sourceTree = "<group>"; };
 		D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerTextLine.swift; sourceTree = "<group>"; };
 		D3ADCEF826262494007F31BA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -85,6 +86,10 @@
 		D3ADCF512628C8E7007F31BA /* UiExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiExt.swift; sourceTree = "<group>"; };
 		D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShofarDemi-Bold.ttf"; sourceTree = "<group>"; };
 		D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShofarRegular.ttf; sourceTree = "<group>"; };
+		D3ADCF62262B6402007F31BA /* StrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrExt.swift; sourceTree = "<group>"; };
+		D3ADCF72262B66BC007F31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3ADCF76262B66BD007F31BA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3ADCF7A262B67F9007F31BA /* OmerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +117,7 @@
 		D3ADCEA02624C046007F31BA = {
 			isa = PBXGroup;
 			children = (
-				D3ADCEE92624CF7B007F31BA /* titles.strings */,
+				D3ADCF73262B66BC007F31BA /* Localizable.strings */,
 				D3ADCEAB2624C046007F31BA /* Omer Counter */,
 				D3ADCEC62624C13A007F31BA /* OmerCounterWidget */,
 				D3ADCEC12624C13A007F31BA /* Frameworks */,
@@ -132,6 +137,7 @@
 		D3ADCEAB2624C046007F31BA /* Omer Counter */ = {
 			isa = PBXGroup;
 			children = (
+				D3ADCF79262B67E9007F31BA /* ViewModel */,
 				D3ADCF572628CCBC007F31BA /* fonts */,
 				D3ADCF502628C8DB007F31BA /* Util */,
 				D3ADCEFF262625F8007F31BA /* Model */,
@@ -207,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				D3ADCF512628C8E7007F31BA /* UiExt.swift */,
+				D3ADCF62262B6402007F31BA /* StrExt.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -218,6 +225,14 @@
 				D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		D3ADCF79262B67E9007F31BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADCF7A262B67F9007F31BA /* OmerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3ADCEE72624CF7B007F31BA /* titles.strings in Resources */,
+				D3ADCF70262B66BC007F31BA /* Localizable.strings in Resources */,
 				D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */,
 				D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */,
 				D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */,
@@ -322,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ADCECB2624C13B007F31BA /* Assets.xcassets in Resources */,
+				D3ADCF71262B66BC007F31BA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,8 @@
 				D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */,
 				D3ADCF242628A1F8007F31BA /* OmerTexts.swift in Sources */,
 				D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */,
+				D3ADCF63262B6402007F31BA /* StrExt.swift in Sources */,
+				D3ADCF7B262B67F9007F31BA /* OmerViewModel.swift in Sources */,
 				D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
 				D3ADCF092626262A007F31BA /* MainContentView.swift in Sources */,
 			);
@@ -367,13 +385,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D3ADCEE92624CF7B007F31BA /* titles.strings */ = {
+		D3ADCF73262B66BC007F31BA /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D3ADCEE82624CF7B007F31BA /* en */,
-				D3ADCEEC2624CF95007F31BA /* he */,
+				D3ADCF72262B66BC007F31BA /* en */,
+				D3ADCF76262B66BD007F31BA /* he */,
 			);
-			name = titles.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
