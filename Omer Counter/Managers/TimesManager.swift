@@ -34,7 +34,7 @@ class TimesManager: NSObject, ObservableObject {
         let solar = Solar(coordinate: location.coordinate)
         
         // Getting sunset times
-        guard let sunset = solar?.astronomicalSunset else {
+        guard let sunset = solar?.sunset else {
             //TODO report error
             return
         }

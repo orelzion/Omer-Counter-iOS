@@ -17,7 +17,9 @@ struct MainContentView: View {
             .overlay(
                 OmerTextView(textLines: viewModel.textLines)
                     .environment(\.layoutDirection, .rightToLeft)
-            ).onAppear(perform: {
+            ).onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+                viewModel.loadOmerText()
+            }.onAppear(perform: {
                 viewModel.loadOmerText()
             })
     }
