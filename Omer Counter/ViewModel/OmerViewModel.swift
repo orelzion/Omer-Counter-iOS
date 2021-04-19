@@ -16,6 +16,7 @@ class OmerViewModel: ObservableObject {
     @Published private(set) var textLines: [OmerTextLine] = []
     
     private var omerManager = OmerManager()
+    private let defaults = UserDefaults()
     
     func loadOmerText() {
         omerManager.$omerDay
@@ -30,15 +31,19 @@ class OmerViewModel: ObservableObject {
     }
     
     private func createTextLines(omerDay: Int) -> [OmerTextLine] {
-        let whisper: LocalizedStringKey = "whisper"
-        return [
-            OmerTextLine(text: beforeOmer),
-            OmerTextLine(text: self.getOmerDayFormatted(omerDay)),
-            OmerTextLine(text: String(format: afterOmer, whisper.stringValue()))
-        ]
-    }
-    
-    private func getOmerDayFormatted(_ omerDay: Int) -> String {
-        return "<big>\(omerDays[omerDay - 1])</big>"
+        let nusach: Nusach
+        switch defaults.string(forKey: "nusach") {
+            case "edot":
+                nusach = .Edot
+            case "sfarad":
+                nusach = .Sfarad
+            case "ashkenaz":
+                nusach = .Ashkenaz
+            case "chabad":
+                nusach = .Chabad
+            default:
+                nusach = .Edot
+        }
+        return OmerGenerator(nusach: nusach, omerDay: omerDay - 1).generate()
     }
 }

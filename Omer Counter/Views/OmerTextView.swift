@@ -26,6 +26,6 @@ struct OmerTextView: View {
 
 struct OmerTextView_Previews: PreviewProvider {
     static var previews: some View {
-        OmerTextView(textLines: [OmerTextLine(text: beforeOmer)])
+        OmerTextView(textLines: [OmerTextLine(text: "")])
     }
 }

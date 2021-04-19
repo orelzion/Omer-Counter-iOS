@@ -35,6 +35,10 @@
 		D3ADCF70262B66BC007F31BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF73262B66BC007F31BA /* Localizable.strings */; };
 		D3ADCF71262B66BC007F31BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF73262B66BC007F31BA /* Localizable.strings */; };
 		D3ADCF7B262B67F9007F31BA /* OmerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF7A262B67F9007F31BA /* OmerViewModel.swift */; };
+		D3ADCF84262CB329007F31BA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF83262CB328007F31BA /* Settings.bundle */; };
+		D3ADCF85262CB329007F31BA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF83262CB328007F31BA /* Settings.bundle */; };
+		D3ADCF89262CB53A007F31BA /* OmerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF88262CB53A007F31BA /* OmerGenerator.swift */; };
+		D3ADCF8D262CB737007F31BA /* Nusach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF8C262CB737007F31BA /* Nusach.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,9 @@
 		D3ADCF72262B66BC007F31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D3ADCF76262B66BD007F31BA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D3ADCF7A262B67F9007F31BA /* OmerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerViewModel.swift; sourceTree = "<group>"; };
+		D3ADCF83262CB328007F31BA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D3ADCF88262CB53A007F31BA /* OmerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmerGenerator.swift; sourceTree = "<group>"; };
+		D3ADCF8C262CB737007F31BA /* Nusach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nusach.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 		D3ADCEA02624C046007F31BA = {
 			isa = PBXGroup;
 			children = (
+				D3ADCF83262CB328007F31BA /* Settings.bundle */,
 				D3ADCF73262B66BC007F31BA /* Localizable.strings */,
 				D3ADCEAB2624C046007F31BA /* Omer Counter */,
 				D3ADCEC62624C13A007F31BA /* OmerCounterWidget */,
@@ -205,6 +213,8 @@
 			children = (
 				D3ADCEF32624D6CC007F31BA /* OmerTextLine.swift */,
 				D3ADCF232628A1F8007F31BA /* OmerTexts.swift */,
+				D3ADCF88262CB53A007F31BA /* OmerGenerator.swift */,
+				D3ADCF8C262CB737007F31BA /* Nusach.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 				D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */,
 				D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */,
 				D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */,
+				D3ADCF84262CB329007F31BA /* Settings.bundle in Resources */,
 				D3ADCF5A2628CCED007F31BA /* ShofarDemi-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ADCECB2624C13B007F31BA /* Assets.xcassets in Resources */,
+				D3ADCF85262CB329007F31BA /* Settings.bundle in Resources */,
 				D3ADCF71262B66BC007F31BA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,10 +369,12 @@
 				D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */,
 				D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */,
 				D3ADCF242628A1F8007F31BA /* OmerTexts.swift in Sources */,
+				D3ADCF8D262CB737007F31BA /* Nusach.swift in Sources */,
 				D3ADCEF42624D6CC007F31BA /* OmerTextLine.swift in Sources */,
 				D3ADCF63262B6402007F31BA /* StrExt.swift in Sources */,
 				D3ADCF7B262B67F9007F31BA /* OmerViewModel.swift in Sources */,
 				D3ADCECE2624C13B007F31BA /* OmerCounterWidget.intentdefinition in Sources */,
+				D3ADCF89262CB53A007F31BA /* OmerGenerator.swift in Sources */,
 				D3ADCF092626262A007F31BA /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
