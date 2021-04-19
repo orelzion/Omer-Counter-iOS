@@ -10,3 +10,6 @@ My goal with this app is to
  
 ## Technologies
 This app is written completly in Swift and is uses SwiftUi to building views
+
+## Screenshots
+![Simulator Screen Shot - iPhone 12 mini - 2021-04-19 at 18 15 29](https://user-images.githubusercontent.com/1846941/115260273-494f2c80-a13b-11eb-93e6-7f1f39d2a4b4.png)
