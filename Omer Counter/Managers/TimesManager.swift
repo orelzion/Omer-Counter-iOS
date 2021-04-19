@@ -12,22 +12,7 @@ import Combine
 
 class TimesManager: NSObject, ObservableObject {
     
-    private var locationManager = LocationManager()
-    private var cancellables = Set<AnyCancellable>()
     @Published var hebrewDate: Date? = nil
-    
-    override init() {
-        super.init()
-        
-        // Subscribe to location updates
-        locationManager.$location
-            .sink(receiveValue: { (loc: CLLocation?) in
-                // If we recevive an actual location, get its solar details
-                if(loc != nil) {
-                    self.onLocationRecevied(location: loc!)
-                }
-            }).store(in: &cancellables) // Observables must be stored, or you won't get any updates
-    }
     
     func onLocationRecevied(location: CLLocation) {
         // Getting solat information for current location

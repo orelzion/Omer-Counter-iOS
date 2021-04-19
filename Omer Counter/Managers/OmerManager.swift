@@ -13,17 +13,7 @@ class OmerManager: NSObject, ObservableObject {
     private var timesManager = TimesManager()
     private var cancellables = Set<AnyCancellable>()
     @Published var omerDay: Int? = nil
-    
-    override init() {
-        super.init()
         
-        timesManager.$hebrewDate.sink { (hebrewData: Date?) in
-            if(hebrewData != nil) {
-                self.onDateUpdated(hebrewDate: hebrewData!)
-            }
-        }.store(in: &cancellables)
-    }
-    
     func onDateUpdated(hebrewDate: Date) {
         let diffs = Calendar(identifier: .hebrew).dateComponents([.day], from: getFirstOmerDay(), to: hebrewDate)
         self.omerDay = diffs.day!
