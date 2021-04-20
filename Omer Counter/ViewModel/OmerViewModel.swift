@@ -19,7 +19,7 @@ class OmerViewModel: ObservableObject {
     private var locationManager = LocationManager()
     private var timesManager = TimesManager()
     private var omerManager = OmerManager()
-    private let defaults = UserDefaults()
+    private let defaults = SharedUserDefaults.create()
     
     fileprivate func observeLocation() {
         // Subscribe to location updates
@@ -62,7 +62,7 @@ class OmerViewModel: ObservableObject {
     
     private func createTextLines(omerDay: Int) -> [OmerTextLine] {
         let nusach: Nusach
-        switch defaults.string(forKey: "nusach") {
+        switch defaults.string(forKey:SharedUserDefaults.keys.nusach) {
             case "edot":
                 nusach = .Edot
             case "sfarad":
