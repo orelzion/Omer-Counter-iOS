@@ -10,7 +10,7 @@ import MapKit
 
 class LocationManager: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
-    private let defaults = UserDefaults()
+    private let defaults = SharedUserDefaults.create()
     @Published var location: CLLocation? = nil
     
     override init() {
@@ -31,6 +31,6 @@ extension LocationManager: CLLocationManagerDelegate {
         }
         
         self.location = location
-        defaults.setValue([location.coordinate.latitude, location.coordinate.longitude], forKey: "last_location")
+        defaults.setValue([location.coordinate.latitude, location.coordinate.longitude], forKey: SharedUserDefaults.keys.location)
     }
 }

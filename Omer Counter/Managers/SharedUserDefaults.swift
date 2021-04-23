@@ -11,6 +11,7 @@ class SharedUserDefaults {
     
     struct keys {
         static let nusach = "nusach"
+        static let location = "last_location"
     }
     
     static func create() -> UserDefaults {
