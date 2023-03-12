@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "solar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ceeK/Solar.git",
+      "state" : {
+        "revision" : "eacab01aa732612d97c723ceb77c748aaba54c82",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

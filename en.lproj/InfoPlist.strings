@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Omer Counter
+
+  Created by Orel Zion on 12/03/2023.
+  
+*/
+NSLocationWhenInUseUsageDescription = "Your location is used to determine the Hebrew date";

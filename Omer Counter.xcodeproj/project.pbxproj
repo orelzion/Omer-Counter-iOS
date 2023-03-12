@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3ACB98F29BE6B320046232F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ACB99129BE6B320046232F /* InfoPlist.strings */; };
 		D3ADCEAD2624C046007F31BA /* Omer_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEAC2624C046007F31BA /* Omer_CounterApp.swift */; };
 		D3ADCEAF2624C046007F31BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCEAE2624C046007F31BA /* ContentView.swift */; };
 		D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCEB02624C046007F31BA /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		D3ADCF1626273374007F31BA /* OmerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1526273374007F31BA /* OmerManager.swift */; };
 		D3ADCF242628A1F8007F31BA /* OmerTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF232628A1F8007F31BA /* OmerTexts.swift */; };
 		D3ADCF3D2628BA13007F31BA /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF3C2628BA13007F31BA /* AttributedText.swift */; };
-		D3ADCF4B2628C85D007F31BA /* BlackLabsSwiftUIColor in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */; };
 		D3ADCF522628C8E7007F31BA /* UiExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF512628C8E7007F31BA /* UiExt.swift */; };
 		D3ADCF5A2628CCED007F31BA /* ShofarDemi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF582628CCED007F31BA /* ShofarDemi-Bold.ttf */; };
 		D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCF592628CCED007F31BA /* ShofarRegular.ttf */; };
@@ -34,13 +34,16 @@
 		D3ADCFDD262DFA3E007F31BA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADCEC42624C13A007F31BA /* SwiftUI.framework */; };
 		D3ADCFE0262DFA3E007F31BA /* Omer_Counter_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCFDF262DFA3E007F31BA /* Omer_Counter_Widget.swift */; };
 		D3ADCFE2262DFA40007F31BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCFE1262DFA40007F31BA /* Assets.xcassets */; };
-		D3ADCFE6262DFA40007F31BA /* Omer Counter WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3ADCFDB262DFA3E007F31BA /* Omer Counter WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3ADCFE6262DFA40007F31BA /* Omer Counter WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D3ADCFDB262DFA3E007F31BA /* Omer Counter WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3ADCFEE262DFEB1007F31BA /* ShofarRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3ADCFED262DFEB1007F31BA /* ShofarRegular.ttf */; };
 		D3ADCFF2262DFF56007F31BA /* OmerTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF232628A1F8007F31BA /* OmerTexts.swift */; };
 		D3ADCFF6262DFFDF007F31BA /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF3C2628BA13007F31BA /* AttributedText.swift */; };
 		D3ADCFFA262E0003007F31BA /* UiExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF512628C8E7007F31BA /* UiExt.swift */; };
 		D3ADD010262F5A00007F31BA /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADD00F262F5A00007F31BA /* SharedUserDefaults.swift */; };
 		D3ADD011262F5A00007F31BA /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADD00F262F5A00007F31BA /* SharedUserDefaults.swift */; };
+		D3ADD014263097C8007F31BA /* TimesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1126262A33007F31BA /* TimesManager.swift */; };
+		D3ADD01726309B96007F31BA /* OmerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADCF1526273374007F31BA /* OmerManager.swift */; };
+		D3ADD01B26309E10007F31BA /* Solar in Frameworks */ = {isa = PBXBuildFile; productRef = D3ADD01A26309E10007F31BA /* Solar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,20 +57,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D3ADCED52624C13B007F31BA /* Embed App Extensions */ = {
+		D3ADCED52624C13B007F31BA /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D3ADCFE6262DFA40007F31BA /* Omer Counter WidgetExtension.appex in Embed App Extensions */,
+				D3ADCFE6262DFA40007F31BA /* Omer Counter WidgetExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D3ACB99029BE6B320046232F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3ACB99229BE6B380046232F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3ADCEA92624C046007F31BA /* Omer Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omer Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ADCEAC2624C046007F31BA /* Omer_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Omer_CounterApp.swift; sourceTree = "<group>"; };
 		D3ADCEAE2624C046007F31BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3ADCF4B2628C85D007F31BA /* BlackLabsSwiftUIColor in Frameworks */,
 				D3ADCF0E26262A0F007F31BA /* Solar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ADD01B26309E10007F31BA /* Solar in Frameworks */,
 				D3ADCFDD262DFA3E007F31BA /* SwiftUI.framework in Frameworks */,
 				D3ADCFDC262DFA3E007F31BA /* WidgetKit.framework in Frameworks */,
 			);
@@ -128,6 +133,7 @@
 		D3ADCEA02624C046007F31BA = {
 			isa = PBXGroup;
 			children = (
+				D3ACB99129BE6B320046232F /* InfoPlist.strings */,
 				D3ADCF83262CB328007F31BA /* Settings.bundle */,
 				D3ADCF73262B66BC007F31BA /* Localizable.strings */,
 				D3ADCEAB2624C046007F31BA /* Omer Counter */,
@@ -261,7 +267,7 @@
 				D3ADCEA52624C046007F31BA /* Sources */,
 				D3ADCEA62624C046007F31BA /* Frameworks */,
 				D3ADCEA72624C046007F31BA /* Resources */,
-				D3ADCED52624C13B007F31BA /* Embed App Extensions */,
+				D3ADCED52624C13B007F31BA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -271,7 +277,6 @@
 			name = "Omer Counter";
 			packageProductDependencies = (
 				D3ADCF0D26262A0F007F31BA /* Solar */,
-				D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */,
 			);
 			productName = "Omer Counter";
 			productReference = D3ADCEA92624C046007F31BA /* Omer Counter.app */;
@@ -290,6 +295,9 @@
 			dependencies = (
 			);
 			name = "Omer Counter WidgetExtension";
+			packageProductDependencies = (
+				D3ADD01A26309E10007F31BA /* Solar */,
+			);
 			productName = "Omer Counter WidgetExtension";
 			productReference = D3ADCFDB262DFA3E007F31BA /* Omer Counter WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -301,7 +309,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					D3ADCEA82624C046007F31BA = {
 						CreatedOnToolsVersion = 12.4;
@@ -323,7 +331,6 @@
 			mainGroup = D3ADCEA02624C046007F31BA;
 			packageReferences = (
 				D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */,
-				D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */,
 			);
 			productRefGroup = D3ADCEAA2624C046007F31BA /* Products */;
 			projectDirPath = "";
@@ -341,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ADCF70262B66BC007F31BA /* Localizable.strings in Resources */,
+				D3ACB98F29BE6B320046232F /* InfoPlist.strings in Resources */,
 				D3ADCEB42624C046007F31BA /* Preview Assets.xcassets in Resources */,
 				D3ADCF5B2628CCED007F31BA /* ShofarRegular.ttf in Resources */,
 				D3ADCEB12624C046007F31BA /* Assets.xcassets in Resources */,
@@ -390,8 +398,10 @@
 			files = (
 				D3ADCFF6262DFFDF007F31BA /* AttributedText.swift in Sources */,
 				D3ADCFFA262E0003007F31BA /* UiExt.swift in Sources */,
+				D3ADD014263097C8007F31BA /* TimesManager.swift in Sources */,
 				D3ADCFE0262DFA3E007F31BA /* Omer_Counter_Widget.swift in Sources */,
 				D3ADCFF2262DFF56007F31BA /* OmerTexts.swift in Sources */,
+				D3ADD01726309B96007F31BA /* OmerManager.swift in Sources */,
 				D3ADD011262F5A00007F31BA /* SharedUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +417,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D3ACB99129BE6B320046232F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ACB99029BE6B320046232F /* en */,
+				D3ACB99229BE6B380046232F /* he */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D3ADCF73262B66BC007F31BA /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -423,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -470,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -484,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -525,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -554,8 +575,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.orelzion.Omer-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -578,8 +602,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.orelzion.Omer-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -590,6 +617,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Omer Counter WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = B4F7N3MCU2;
 				INFOPLIST_FILE = "Omer Counter Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +640,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Omer Counter WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = B4F7N3MCU2;
 				INFOPLIST_FILE = "Omer Counter Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,14 +697,6 @@
 				minimumVersion = 2.2.0;
 			};
 		};
-		D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nbasham/BlackLabsSwiftUIColor/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -684,10 +705,10 @@
 			package = D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */;
 			productName = Solar;
 		};
-		D3ADCF4A2628C85D007F31BA /* BlackLabsSwiftUIColor */ = {
+		D3ADD01A26309E10007F31BA /* Solar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3ADCF492628C85D007F31BA /* XCRemoteSwiftPackageReference "BlackLabsSwiftUIColor" */;
-			productName = BlackLabsSwiftUIColor;
+			package = D3ADCF0C26262A0F007F31BA /* XCRemoteSwiftPackageReference "Solar" */;
+			productName = Solar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

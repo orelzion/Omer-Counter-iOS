@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         return ZStack {
-            MainContentView().font(Font.custom("ShofarRegular", size: 18))
+            MainContentView().font(Font.custom("ShofarRegular", size: 22))
         }
     }
 }

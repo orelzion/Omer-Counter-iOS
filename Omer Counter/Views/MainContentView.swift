@@ -12,12 +12,11 @@ struct MainContentView: View {
     @ObservedObject var viewModel = OmerViewModel()
     
     var body: some View {
-        Color("BackgroundColor")
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
-                OmerTextView(textLines: viewModel.textLines)
-                    .environment(\.layoutDirection, .rightToLeft)
-            ).onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+        NavigationView {
+            OmerTextView(textLines: viewModel.textLines)
+                .environment(\.layoutDirection, .rightToLeft)
+        }
+            .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
                 viewModel.loadOmerText()
             }.onAppear(perform: {
                 viewModel.loadOmerText()
